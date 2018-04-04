@@ -1,0 +1,166 @@
+<!DOCtype html>
+<html>
+<head>
+	<style type="text/css">
+	 body {background-color : #59ABE3 ;
+	 font-family:Comic Sans MS;}
+	 .tda{position : relative ;
+		  left : 80%;}
+     .tdb{position : relative ;
+		  left : 95%;}
+     .tdc{position : relative ;
+		  left : 110%;}
+	.tdd{position : relative ;
+		  left : 125%;}
+	.tdate{position:relative;
+		  left:5%;}
+	.right{background-color : white ; 
+	       float : left ;
+		   margin-right : 20px ;
+		   margin-left : 45px ;
+		   height : 550px ;
+		   width : 244px ;
+		   }
+	.left {float : left;
+           margin-left : 13px ;
+		   margin-right : 35px ;
+		   padding-left : 65px ;}
+	.mid {width : 590px;
+		  float : left ;
+		  padding-left : 10px ;
+		}
+	.ok { padding : 20px ;
+		  background-color : #00BFFF ;
+		  position : relative ;
+		  left : 92px ;
+		  top : 8px;}
+	.button{box-shadow: 3px 3px 3px 3px #336E7B;
+			padding : 5px ;
+			background-color : #A9A9A9;
+			}
+	text {font-size:17px;}
+	button:hover {background-color : #E4F1FE ;
+				  text-decoration : underline ;}
+	
+	</style>
+</head>
+<body>
+	<center> <img src="marina.jpg" width="95%"/> </center> </br>
+	<hr>
+	<table>
+	<tr>
+		<td class="tdate">
+			<script type = "text/javascript">
+			var today= new Date()
+			var d = today.getDate();
+			var m = today.getMonth()+1;
+			var y = today.getFullYear();
+
+			document.write( + d + " / ");   
+			document.write( + m + " / ");   
+			document.write(y);   
+			</script> 
+		</td>
+		<td class="tda"> <a href="accueil.html"> <button type="button" class="button"> ACCUEIL </button> </td>
+		<td class="tdb"> <a href="velos.html"> <button type="button" class="button"> VELOS </button> </td>
+		<td class="tdc"> <a href="systeme.html"> <button type="button" class="button"> SYSTEME </button> </td>
+		<td class="tdd"> <a href="abonnement.html"> <button type="button" class="button"> ABONNEMENT </button> </td>
+	</tr>
+	</table> 
+
+<hr>
+
+</br>	
+	<div class="left">
+		<img height="469px" width="257px" src="pub2.jpg"/></br>
+		<img height="469px" width="257px" src="pub3.jpg"/>
+	</div>
+	<div class="mid">
+		<p> <text>Bienvenue au site Vé-Liban !!! </text></br></br> C'est là où vous pouvez louer votre Vélo pour vous déplacer librement
+       	dans les rues du Liban sans trafic ni pollution .
+		Cette idée venant de la France à permis  en premier lieu la reduction de la quantité de pollution diffuser dans nos rues
+		et en second lieu le confort des habitants coté circulation et trafic.
+		</br> Nous Vous demandons chers citoyens d'encourager toute personne à inscrire son nom pour une carte vé-Liban 
+		,ceci fera de nous un peuple qui mérite un meilleur Liban. </p> </br>
+		
+		<script type="text/javascript">
+    
+			function changeImage() {
+				document.getElementById("changer").src = "beyrouth1.jpg";
+			}
+			function changeImage2() {
+				document.getElementById("changer2").src = "beyrouth2.jpg";
+		   }
+		   function changeImage3() {
+				document.getElementById("changer3").src = "beyrouth3.jpg";
+		   }
+		   function changeImage4() {
+				document.getElementById("changer4").src = "beyrouth4.jpg";
+		   }
+		</script>
+		<center><text>Cliquez sur les photos ci-dessous</text></center></br>
+		<table><tr><td>
+			<img src="bicycle1.jpg" width ="300px" height ="250px"id="changer" onclick="changeImage()" /></td><td>
+			<img src="bicycle2.jpg" width ="300px" height ="250px" id="changer2" onclick="changeImage2()" /></td></tr><td>
+			<img src="bicycle3.jpg" width ="300px" height ="250px" id="changer3" onclick="changeImage3()" /></td><td>
+			<img src="bicycle4.jpg" width ="300px" height ="250px" id="changer4" onclick="changeImage4()" /></td></tr>
+		</table>	
+	
+<a href="abonnement.html"><center><input type="image" src="inscription3.png" value=""></center></a>
+
+
+	</div>
+		
+		
+	<div class="right" style="background-color: #A9A9A9;">
+		<div>
+			<h2 align="center"> <u> Calculateur de </br> tarifs : </u> </h2>
+			<script type="text/javascript">
+			function frais(){ a = document.getElementById("nom").value;
+								if (a == ""){
+									alert("S'il vous plait , entrer votre nom.");
+									return;}
+							  b = document.getElementById("prenom").value;
+								if (b == ""){
+									alert("S'il vous plait , entrer votre prenom.");
+									return;}
+							  c = document.getElementById("jours").value;
+							    if (c == ""){
+									alert("S'il vous plait , entrer le nombre de jours.");
+									return;}
+								if (c != parseInt(c,10)){
+									alert("S'il vous plait , entrer des chiffres et pas de lettres.");
+									return;}
+								else {c = parseInt(c);}
+							  d = document.getElementById("kilometres").value;
+								if (d == ""){
+									alert("S'il vous plait , entrer le nombre de kilometres.");
+									return;}
+								if (d != parseInt(d,10)){
+									alert("S'il vous plait , entrer des chiffres et pas de lettres.");
+									return;}
+								else {d = parseInt(d);}
+							  r = (c*0.4)*(d*0.2)*10000;
+								alert( a + " " + b + " votre frais est : " + r + " L.L." );
+							}
+			</script>
+			<ol type="1">
+				<li> Nom : </br> <input type="text" id="nom" size="15" > </li>
+				<li> Prénom  :</br> <input type="text" id="prenom" size="15"> </li>
+				<li> Jours de louement : </br><input type="text" id="jours" size="4"> </li> 
+				(<u>N.B.:</u> un jour commence </br>et se termine à 6h am .)<br>
+				<li> Nombre de Kilomètres : <input type="text" id="kilometres" size="4"> </li>
+				(<u>N.B.:</u> veuillez regarder le kilométrage pour savoir le nombre de kilos .)<br>
+			</ol> </br>
+		<hr>
+		<input type="button" onclick="frais()" value="OK" class="ok">
+		</div></br></br></br></br></br></br></br></br>
+		<div width="200px" align="center">
+		<img id="ouiv" src="nonv.jpg" style="width:200px"> </br> </br>
+		<button onclick="document.getElementById('ouiv').src='ouiv.jpg'" style="padding:5px">Appuyez ici !!! </button>
+		</div>
+	</div>
+		
+	
+</body>
+</html>

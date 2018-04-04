@@ -1,0 +1,179 @@
+<!DOCtype html>
+<html>
+<head>
+	<style type="text/css">
+	 body {background-color : #59ABE3 ;
+	 font-family:Comic Sans MS;}
+	 .tda{position : relative ;
+		  left : 80%;}
+     .tdb{position : relative ;
+		  left : 95%;}
+     .tdc{position : relative ;
+		  left : 110%;}
+	.tdd{position : relative ;
+		  left : 125%;}
+	.tdate{position:relative;
+		  left:5%;}
+	.right{background-color : white ; 
+	       float : left ;
+		   margin-right : 20px ;
+		   margin-left : 45px ;
+		   height : 550px ;
+		   width : 244px ;
+		   }
+	.left {float : left;
+           margin-left : 13px ;
+		   margin-right : 35px ;
+		   padding-left : 65px ;}
+	.mid {width : 590px;
+		  float : left ;
+		  padding-left : 10px ;
+		}
+	.ok { padding : 20px ;
+		  background-color : #00BFFF ;
+		  position : relative ;
+		  left : 92px ;
+		  top : 8px;}
+	.button{box-shadow: 3px 3px 3px 3px #336E7B;
+			padding : 5px ;
+			background-color : #A9A9A9;
+			}
+	text {font-size:17px;}
+	button:hover {background-color : #E4F1FE ;
+				  text-decoration : underline ;}
+	</style>
+</head>
+<body>
+	<center> <img src="marina.jpg" width="95%"/> </center> </br>
+	<hr>
+	<table>
+	<tr>
+		<td class="tdate">
+			<script type = "text/javascript">
+			var today= new Date()
+			var d = today.getDate();
+			var m = today.getMonth()+1;
+			var y = today.getFullYear();
+
+			document.write( + d + " / ");   
+			document.write( + m + " / ");   
+			document.write(y);   
+			</script> 
+		</td>
+		<td class="tda"> <a href="accueil.html"> <button type="button" class="button"> ACCUEIL </button> </td>
+		<td class="tdb"> <a href="velos.html"> <button type="button" class="button"> VELOS </button> </td>
+		<td class="tdc"> <a href="systeme.html"> <button type="button" class="button"> SYSTEME </button> </td>
+		<td class="tdd"> <a href="abonnement.html"> <button type="button" class="button"> ABONNEMENT </button> </td>
+	</tr>
+	</table> 
+
+<hr>
+
+</br>	
+	<div class="left">
+		<img height="469px" width="257px" src="pub2.jpg"/></br>
+		<img height="469px" width="257px" src="pub3.jpg"/>
+	</div>
+	<div class="mid">
+				<h3> Comment Ca marche ? </h3>
+				Prendre un vélo dans une station, le déposer dans une autre, Vé-liban’ est un système de location en libre-service simple à utiliser, 
+				disponible 24 heures sur 24 et 7 jours sur 7. 
+			
+				 
+				NB:Si vous avez un doute sur la bonne restitution de votre vélo, le service Vé-liban’ vous invite à vous identifier à la borne. Si votre vélo est correctement verrouillé, il vous est possible d’imprimer une attestation de bonne restitution. Dans le cas contraire, le message suivant est indiqué « vous avez un vélo encours de location ».
+				Au moindre doute appelez Allo Vé-liban' au 71 639 849.
+
+
+				<h2> Votre sécurité est notre priorité! </h2>
+				<i>
+				Soyez vigilants et attentifs aux autres en respectant le code de la route et les règles de bonne conduite à vélo.
+				Bon à savoir, votre assurance multirisque habitation couvre également les risques liés à la responsabilité civile lors d’un parcours à vélo
+				</i></br>
+				Quelques rappels:
+				<ul>
+					<li>Faire attention aux autres usagers de la route </li>
+					<li>Ne pas traverser sur les passages réservés aux seuls piétons </li>
+					<li>Ne pas dépasser les véhicules par la droite (risque d'angle mort) </li>
+					<li> Ne pas serrer les voitures en stationnement (ouverture de portières) </li>
+					<li>Rouler en file indienne lorsque vous êtes à plusieurs </li>
+					<li>Ne pas monter, ni rouler sur les trottoirs </li>
+					<li>Ne pas transporter de passager sur le vélo </li>
+					<li> Ne pas franchir les carrefours au feu rouge (respect du code de la route) </li>
+					<li>Ne pas prêter votre vélo ainsi que votre carte 'Véliban' </li>
+					<li> Pour un arrêt même de courte durée, attachez le vélo à un arceau de stationnement avec l'anti-vol fourni </li>
+					<li>Signaler avec le bras vos changements de direction </li>
+					<li>Avant de circuler, vérifier le bon état des éléments de sécurité : éclairage, freins, pneus </li>
+					<li>Augmentez votre visibilité la nuit (port de vêtements clairs et d'accessoires réfléchissants) </li>
+					<li> Port du casque recommandé </li>
+					<li>Respecter la règle de la priorité à droite</li>
+				
+							
+				<h2>Pour votre confort</h2>
+					
+				Un vélo conçu et amélioré pour répondre à vos besoins : <ul>
+				<li>Un vélo mixte adapté à tous</li>
+				<li>Un changement de vitesse simple et rapide, sans risque de déraillement </li>
+				<li>Une selle réglable en hauteur </li>
+				<li>Un panier avant de grande capacité, renforcé pour résister aux usages du temps et à une utilisation détournée : 
+				le nouveau panier est ainsi plus solidaire de son support et très peu déformable</li>
+				<li>Une fourche du vélo, maintenant le panier, renforcée</li>
+				<li>Un cadre de vélo et un système de verrouillage des points d'attache plus robustes</li>
+				</ul>
+
+	</div>
+		
+		
+	<div class="right" style="background-color: #A9A9A9;">
+		<div>
+			<h2 align="center"> <u> Calculateur de </br> tarifs : </u> </h2>
+			<script type="text/javascript">
+			function frais(){ a = document.getElementById("nom").value;
+								if (a == ""){
+									alert("S'il vous plait , entrer votre nom.");
+									return;}
+							  b = document.getElementById("prenom").value;
+								if (b == ""){
+									alert("S'il vous plait , entrer votre prenom.");
+									return;}
+							  c = document.getElementById("jours").value;
+							    if (c == ""){
+									alert("S'il vous plait , entrer le nombre de jours.");
+									return;}
+								if (c != parseInt(c,10)){
+									alert("S'il vous plait , entrer des chiffres et pas de lettres.");
+									return;}
+								else {c = parseInt(c);}
+							  d = document.getElementById("kilometres").value;
+								if (d == ""){
+									alert("S'il vous plait , entrer le nombre de kilometres.");
+									return;}
+								if (d != parseInt(d,10)){
+									alert("S'il vous plait , entrer des chiffres et pas de lettres.");
+									return;}
+								else {d = parseInt(d);}
+							  r = (c*0.4)*(d*0.2)*10000;
+								alert( a + " " + b + " votre frais est : " + r + " L.L." );
+							}
+			</script>
+			<ol type="1">
+				<li> Nom : </br> <input type="text" id="nom" size="15" > </li>
+				<li> Prénom  :</br> <input type="text" id="prenom" size="15"> </li>
+				<li> Jours de louement : </br><input type="text" id="jours" size="4"> </li> 
+				(<u>N.B.:</u> un jour commence </br>et se termine à 6h am .)<br>
+				<li> Nombre de Kilomètres : <input type="text" id="kilometres" size="4"> </li>
+				(<u>N.B.:</u> veuillez regarder le kilométrage pour savoir le nombre de kilos .)<br>
+			</ol> </br>
+		<hr>
+		<input type="button" onclick="frais()" value="OK" class="ok">
+		</div></br></br></br></br></br></br></br></br>
+		<div width="200px" align="center">
+		<img id="ouiv" src="nonv.jpg" style="width:200px"> </br> </br>
+		<button onclick="document.getElementById('ouiv').src='ouiv.jpg'" style="padding:5px">Appuez ici !!! </button>
+		</div>
+		
+	</div>
+		
+	
+</body>
+</html>
+
